@@ -9,7 +9,8 @@ router.post('/', async (req, res) => {
         const newNote = await Note.create({ title, content });
         res.status(201).json(newNote);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        console.log(`error ${ error.message}`),
+        res.status(500).json({message: error.message});
     }
 });
 
@@ -47,3 +48,14 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
