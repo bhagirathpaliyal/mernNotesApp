@@ -65,6 +65,7 @@ import NoteItem from "./NoteItem";
     }
   };
 
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#9a8f97] via-[#c3baba] to-[#e9e3e6] p-[20px] font-poppins">
       
